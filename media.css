@@ -29,3 +29,11 @@
         grid-template-columns: 1fr;
     }
 }
+@media  screen and (max-width: 620px){
+    .content_one img{
+        width: 350px;
+    }
+    /* #logo span{
+        font-size: 20px;
+    } */
+}
