@@ -1,0 +1,177 @@
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Tektur:wght@600&display=swap'); */
+
+/* Funcion background  */
+
+:root{
+    --bg-body: #000;
+    --color-text: #fff;
+}
+/* Estilos generales */
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:var(--bg-body);
+    color:var(--color-text);
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Estilos para el header */
+header{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background: #3AB54A;
+    padding: 0px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+    
+}
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-transform: capitalize;
+
+}
+
+main{
+    width: 100%;
+}
+#intro{
+    margin-top: 2pc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3pc;
+    font-size: 3pc;
+    width: 100%;
+}
+#intro h1{
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Tektur', cursive;
+    
+}
+#intro span{
+    font-family:'Courier New', Courier, monospace;
+}
+#intro a, footer a{
+    color:var(--color-text);
+}
+
+.content_one{
+    height: 100vh;
+    margin: 2pc;
+    display: flex;
+    /* justify-content:space-around; */
+    align-items: center;
+    gap: 5pc;
+    
+}
+.content_one .content_text{
+    width: 50%;
+}
+
+.content_one h2{
+    font-family: 'Tektur', cursive;
+    margin-bottom: 30px;
+}
+.content_one p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input{
+    border: none !important;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+
+/* Grilla de personajes */
+#datos{
+    margin: 4pc 1pc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 1pc;
+}
+#datos .cards {
+    padding: 1pc 0pc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    background: #232323;
+    border-radius: 5px;
+    color: white;
+}
+#datos .cards img{
+    border-radius: 50%;
+}
+#datos .cards .card_rigth{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    
+    
+}
+
+/*Cambio de Pagina */
+
+#page{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#page div{
+    background: #ccc;
+    width: 35px;
+    height: 35px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 3px inset gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page div:hover{
+    opacity: .5;
+    transition: all 200ms;
+}
+
+/* Estilos del footer */
+
+footer{
+    background: #3AB54A;
+    padding: 0px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-transform: capitalize;
+}

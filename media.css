@@ -1,0 +1,31 @@
+@media  screen and (max-width: 950px){
+    
+    .content_one{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1pc;
+        height: auto;
+        margin: 1pc 0;
+    }
+    /* .content_one:nth-child(1){
+        flex-direction: column-reverse;
+    } */
+
+
+    #reverse{
+        flex-direction: column-reverse;
+    }
+    
+    #datos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+@media  screen and (max-width: 620px){
+    #datos{
+        grid-template-columns: 1fr;
+    }
+}
